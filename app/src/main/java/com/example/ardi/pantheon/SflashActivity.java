@@ -13,5 +13,4 @@ public class SflashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sflash);
     }
-    //
 }
