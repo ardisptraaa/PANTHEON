@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#00AA8D</color>
-    <color name="colorPrimaryDark">#006064</color>
+    <color name="colorPrimary">#03859d</color>
+    <color name="colorPrimaryDark">#00687b</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+    <!-- WARNANYA PANCA YAK YARRRRR -->
+    <color name="Putih">#fff</color>
+    <color name="AgakPutih">#e6e6e6</color>
+    <color name="hijautosca">#00AA8D</color>
+    <color name="Cyan1">#03859d</color>
+    <color name="Cyan2">#b7dce3</color>
 </resources>
