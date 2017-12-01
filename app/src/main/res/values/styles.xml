@@ -8,4 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ProgressPutih" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">#FFF</item>
+    </style>
 </resources>

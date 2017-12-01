@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.ardi.pantheon.MenuActivity">
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006064"
+    >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,13 +21,16 @@
 
         <ImageButton
             android:id="@+id/menu1"
+            android:onClick="men1"
             android:layout_width="match_parent"
             android:layout_height="115dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:background="#607D8B"
-
+            android:src="@drawable/carieror"
+            android:scaleType="fitStart"
+            android:padding="7dp"
             />
 
 
@@ -35,7 +42,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:background="#607D8B" />
+            android:background="#607D8B"
+            android:src="@drawable/installos"
+            android:scaleType="fitStart"
+            android:padding="7dp"
+            android:onClick="men2"
+            />
+
+
 
         <ImageButton
             android:id="@+id/menu3"
@@ -45,7 +59,12 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:background="#607D8B" />
+            android:background="#607D8B"
+            android:src="@drawable/installsoftware"
+            android:scaleType="fitStart"
+            android:padding="7dp"
+            android:onClick="men3"
+            />
 
         <ImageButton
             android:id="@+id/menu4"
@@ -55,7 +74,15 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:background="#607D8B" />
+            android:layout_marginBottom="10dp"
+            android:background="#607D8B"
+            android:src="@drawable/tentangkami"
+            android:scaleType="fitStart"
+            android:padding="7dp"
+            android:onClick="men4"
+            />
 
     </RelativeLayout>
-</RelativeLayout>
+</ScrollView>
+
+</LinearLayout>
