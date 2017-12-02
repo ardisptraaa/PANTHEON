@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -26,10 +27,18 @@ public class Mac extends AppCompatActivity {
     Integer[] imgid = {R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round };
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = new Intent (getApplicationContext(),MenuOSActivity.class);
+        startActivity(intent);
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mac);
-
+        setTitle("Macintosh");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         customListAdapter adapter = new customListAdapter(this, sistem, imgid);
         mac = findViewById(R.id.mac);
         mac.setAdapter(adapter);

@@ -9,7 +9,7 @@ import android.view.View;
 
 public class MenuActivity extends AppCompatActivity {
 
-
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,23 +18,24 @@ public class MenuActivity extends AppCompatActivity {
 
     }
     public void men1(View view) {
-        Intent pindahActivity1 = new Intent(MenuActivity.this, CariTroubleActivity.class);
-        startActivity(pindahActivity1);
+        intent = new Intent(MenuActivity.this, ErrorMainActivity.class);
+        startActivity(intent);
             }
 
     public void men2(View view) {
-        Intent pindahActivity1 = new Intent(MenuActivity.this, MenuOSActivity.class);
-        startActivity(pindahActivity1);
+        intent = new Intent(MenuActivity.this, MenuOSActivity.class);
+        startActivity(intent);
     }
 
     public void men3(View view) {
-        Intent pindahActivity1 = new Intent(MenuActivity.this, InstallSoftwareActivity.class);
-        startActivity(pindahActivity1);
+        intent = new Intent(MenuActivity.this, InstallSoftwareActivity.class);
+        startActivity(intent);
+
     }
 
     public void men4(View view) {
-        Intent pindahActivity1 = new Intent(MenuActivity.this, AboutActivity.class);
-        startActivity(pindahActivity1);
+        intent = new Intent(MenuActivity.this, AboutActivity.class);
+        startActivity(intent);
     }
 
 

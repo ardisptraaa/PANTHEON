@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -17,10 +18,18 @@ public class MenuOSActivity extends AppCompatActivity implements AdapterView.OnI
     Integer[] imgid = {R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round };
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = new Intent (getApplicationContext(),MenuActivity.class);
+        startActivityForResult(intent,0);
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_os);
-
+        setTitle("Install OS");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         customListAdapter adapter = new customListAdapter(this, osname, imgid );
         list = findViewById(R.id.list);
         list.setAdapter(adapter);

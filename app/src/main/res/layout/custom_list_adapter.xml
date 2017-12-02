@@ -33,6 +33,6 @@
             android:text="Medium Text"
             android:layout_gravity="center_vertical"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/colorPrimaryDark" />
+            android:textColor="@color/Putih" />
     </LinearLayout>
 </FrameLayout>

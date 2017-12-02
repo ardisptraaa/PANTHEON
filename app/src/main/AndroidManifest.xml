@@ -15,13 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MasalahActivity" />
         <activity android:name=".Linux" />
         <activity android:name=".Mac" />
+        <activity android:name=".ErrorMainActivity"/>
         <activity android:name=".Windows" />
         <activity android:name=".MenuOSActivity"/>
         <activity android:name=".InstallSoftwareActivity" />
-        <activity android:name=".CariTroubleActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".MenuActivity"></activity>
     </application>
