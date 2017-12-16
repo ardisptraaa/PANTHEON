@@ -17,10 +17,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Windows extends AppCompatActivity {
-    ListView windows;
-    Intent intent;
-    String[] sistem = {"Windows 7","Windows 8","Windows 10"};
+   public class Windows extends AppCompatActivity {
+        ListView windows;
+        Intent intent;
+        String[] sistem = {"Windows 7","Windows 8","Windows 10"};
     Integer[] imgid = {R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round };
 
     @Override

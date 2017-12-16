@@ -11,18 +11,19 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Linux" />
         <activity android:name=".Mac" />
-        <activity android:name=".ErrorMainActivity"/>
+        <activity android:name=".ErrorMainActivity" />
         <activity android:name=".Windows" />
-        <activity android:name=".MenuOSActivity"/>
+        <activity android:name=".MenuOSActivity" />
         <activity android:name=".InstallSoftwareActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".MenuActivity" />
     </application>
 
 </manifest>
