@@ -3,12 +3,11 @@ package com.example.ardi.pantheon;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
+
 
 
 public class MenuOSActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
@@ -19,8 +18,7 @@ public class MenuOSActivity extends AppCompatActivity implements AdapterView.OnI
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent (getApplicationContext(),MenuActivity.class);
-        startActivityForResult(intent,0);
+        super.onBackPressed();
         return true;
     }
 

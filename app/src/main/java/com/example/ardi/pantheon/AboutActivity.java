@@ -9,8 +9,7 @@ public class AboutActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent (getApplicationContext(),MenuActivity.class);
-        startActivityForResult(intent,0);
+        super.onBackPressed();
         return true;
     }
 

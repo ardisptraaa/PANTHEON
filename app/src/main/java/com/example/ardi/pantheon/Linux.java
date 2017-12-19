@@ -28,8 +28,7 @@ public class Linux extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent (getApplicationContext(),MenuOSActivity.class);
-        startActivityForResult(intent,0);
+        super.onBackPressed();
         return true;
     }
 

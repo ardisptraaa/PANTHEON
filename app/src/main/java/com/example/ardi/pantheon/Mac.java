@@ -23,13 +23,12 @@ import android.widget.Toast;
 public class Mac extends AppCompatActivity {
     ListView mac;
     Intent intent;
-    String[] sistem = {"Mac OS","Mac OS  Sierra"};
-    Integer[] imgid = {R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round, R.mipmap.ic_launcher_round };
+    String[] sistem = {"Mac OS  Sierra"};
+    Integer[] imgid = {R.mipmap.ic_launcher_round};
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent (getApplicationContext(),MenuOSActivity.class);
-        startActivity(intent);
+        super.onBackPressed();
         return true;
     }
 
