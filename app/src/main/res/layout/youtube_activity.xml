@@ -41,7 +41,8 @@ tools:context="com.example.ardi.pantheon.YoutubeActivity">
 
         </LinearLayout>
 
-        <LinearLayout
+        <ScrollView
+
             android:layout_marginTop="3dp"
             android:layout_marginBottom="2dp"
             android:layout_marginLeft="8dp"
@@ -51,30 +52,33 @@ tools:context="com.example.ardi.pantheon.YoutubeActivity">
             android:layout_weight="5"
             android:background="@drawable/buatlengkung">
 
-            <TextView
-                tools:ignore="UselessParent"
-                android:textAlignment="inherit"
-                android:textSize="15dp"
-                android:id="@+id/tv1"
-                android:textColor="@color/Putih"
-                android:padding="5dp"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                />
-        </LinearLayout>
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/judul"
+                    android:padding="5dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/Putih"
+                    />
+                <TextView
+                    tools:ignore="UselessParent"
+                    android:textAlignment="inherit"
+                    android:gravity="center_vertical"
+                    android:textSize="15dp"
+                    android:id="@+id/tv1"
+                    android:textColor="@color/Putih"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
 </LinearLayout>
 
 </LinearLayout>

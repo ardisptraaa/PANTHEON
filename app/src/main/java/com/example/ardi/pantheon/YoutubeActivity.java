@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.WindowManager;
+import android.text.Html;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +25,7 @@ public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlaye
     private MyPlaybackEventListener playbackEventListener;
     private YouTubePlayer player;
 
-TextView textView;
+TextView textView,judA;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +37,12 @@ TextView textView;
         playerStateChangeListener = new MyPlayerStateChangeListener();
         playbackEventListener = new MyPlaybackEventListener();
         Intent intent = getIntent();
+
+        judA = findViewById(R.id.judul);
+        judA.setText(Html.fromHtml(""+intent.getStringExtra("judul")));
+
         textView = (TextView) findViewById(R.id.tv1);
-        textView.setText(intent.getStringExtra("text1"));
+        textView.setText(Html.fromHtml(""+intent.getStringExtra("html")));
 
     }
 
@@ -92,23 +98,21 @@ TextView textView;
         @Override
         public void onPlaying() {
 
-            showMessage("Memutar");
         }
 
         @Override
         public void onPaused() {
-            showMessage("Ditunda");
+
         }
 
         @Override
         public void onStopped() {
 
-            showMessage("Berhenti");
         }
 
         @Override
         public void onBuffering(boolean b) {
-            // jika buffer
+
         }
 
         @Override

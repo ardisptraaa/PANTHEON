@@ -25,8 +25,7 @@ public class InstallSoftwareActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent (getApplicationContext(),InstallSoftwareActivity.class);
-        startActivityForResult(intent,0);
+        super.onBackPressed();
         return true;
     }
 

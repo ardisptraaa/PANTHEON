@@ -20,7 +20,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Mac extends AppCompatActivity {
+public class Mac extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView mac;
     Intent intent;
     String[] sistem = {"Mac OS  Sierra"};
@@ -41,16 +41,20 @@ public class Mac extends AppCompatActivity {
         customListAdapter adapter = new customListAdapter(this, sistem, imgid);
         mac = findViewById(R.id.mac);
         mac.setAdapter(adapter);
+        mac.setOnItemClickListener(this);
+    }
 
-        mac.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String Slecteditem = sistem[+position];
-                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
-
-            }
-        });
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        switch (position) {
+            case 0:
+                intent = new Intent(Mac.this, YoutubeActivity.class);
+                intent.putExtra("urlnya", "ztuxdqQIiUw");
+                intent.putExtra("judul","<b>Mac OS Sierra</b>");
+                intent.putExtra("html", "<i>Mac OS Sierra</i> adalah versi  ketiga belas dari macOS (sebelumnya OS X), sistem operasi desktop dan server Apple Inc. untuk komputer Macintosh. Penerus OS X El Capitan, itu adalah versi pertama dari sistem operasi yang dikeluarkan pada juni 2016 sebagai macOS. <br />Sierra dinamai menurut pegunungan California Sierra Nevada. Fitur utamanya yang utama menyangkut Continuity, iCloud, dan windowing, serta dukungan untuk Apple Pay dan Siri." +
+                        "<br />" +
+                        "<br />Versi beta pertama dari Mac OS Sierra dirilis ke pengembang setelah keynote PDDC 2016 pada tanggal 13 Juni 2016. Peluncuran beta pertama diikuti pada tanggal 7 Juli 2016 dan dipasarkan ke pengguna akhir pada tanggal 20 September 2016, sebagai sebuah upgrade melalui Mac App Store.");
+                startActivity(intent);
+                break;
+        }
     }
 }
