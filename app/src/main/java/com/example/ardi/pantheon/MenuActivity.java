@@ -34,6 +34,11 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void men4(View view) {
+        intent = new Intent(MenuActivity.this, MainChatActivity.class);
+        startActivity(intent);
+    }
+
+    public void men5(View view) {
         intent = new Intent(MenuActivity.this, AboutActivity.class);
         startActivity(intent);
     }

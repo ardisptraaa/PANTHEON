@@ -76,10 +76,26 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/press_menu"
-            android:src="@drawable/tentangkami"
+            android:src="@drawable/xchat"
             android:scaleType="fitStart"
             android:padding="7dp"
             android:onClick="men4"
+            />
+
+        <ImageButton
+            android:id="@+id/menu5"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_below="@id/menu4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/press_menu"
+            android:src="@drawable/tentangkami"
+            android:scaleType="fitStart"
+            android:padding="7dp"
+            android:onClick="men5"
             />
 
     </RelativeLayout>
