@@ -60,7 +60,7 @@ public class Linux extends AppCompatActivity implements AdapterView.OnItemClickL
 
                 case 2:
                     intent = new Intent(Linux.this, YoutubeActivity.class);
-                    intent.putExtra("urlnya","Opwqps9f0ds");
+                    intent.putExtra("urlnya","lhj8n-krvIU");
                     intent.putExtra("judul","<b>Linux Ubuntu</b>");
                     intent.putExtra("html","<i>Linux Ubuntu </i> merupakan salah satu distribusi Linux yang berbasiskan Debian dan didistribusikan sebagai perangkat lunak bebas. Nama Ubuntu berasal dari filosofi dari Afrika Selatan yang berarti 'kemanusiaan kepada sesama'.<br /> <br /> Ubuntu dirancang untuk kepentingan penggunaan pribadi, namun versi server Ubuntu juga tersedia, dan telah dipakai secara luas.\n" +
                             "\n" +
